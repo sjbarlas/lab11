@@ -1,2 +1,1 @@
-# lab11
-boto
+# cc-lab11-aws-sqs
