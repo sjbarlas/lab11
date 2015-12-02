@@ -34,9 +34,9 @@ args = parser.parse_args()
 try:
 	q=conn.get_queue(args.qname)
 except:
-	print "Failed to find queue ",args.qname
+	print "Couldn't delete the queue ",args.qname
 try:
 	conn.delete_queue(q,True)
-	print args.qname, " queue has been deleted"
+	print args.qname, " deleted"
 except:
-	print "Could not delete the queue, or it does not exist"
+	print "Error: was not able to delete it"
